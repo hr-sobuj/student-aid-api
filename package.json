@@ -1,6 +1,6 @@
 {
   "name": "student-aid",
-  "version": "1.0.0",
+  "version": "10.0.0",
   "description": "Student Aid Backend",
   "main": "app.js",
   "engines": {
