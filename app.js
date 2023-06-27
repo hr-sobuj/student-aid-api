@@ -64,11 +64,24 @@ const swaggerDocs = swaggerJsDoc(swaggerOptions);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 // DATABASE CONNECTION
+// mongoose
+//     .connect(
+//         process.env.NODE_ENV === 'development'
+//             ? process.env.MONGODB_CONNECTION_STRING_LOCAL
+//             : 'mongodb+srv://hr-sobuj:xs2ShkDKTB3FdUZ@student-aid.54e0b2i.mongodb.net/?retryWrites=true&w=majority',
+//         {
+//             useNewUrlParser: true,
+//             useUnifiedTopology: true,
+//             // eslint-disable-next-line prettier/prettier
+//         },
+//     )
+//     .then(() => console.log('Database Connected.'))
+//     .catch((err) => {
+//         console.log(err);
+//     });
 mongoose
     .connect(
-        process.env.NODE_ENV === 'development'
-            ? process.env.MONGODB_CONNECTION_STRING_LOCAL
-            : 'mongodb+srv://hr-sobuj:xs2ShkDKTB3FdUZ@student-aid.54e0b2i.mongodb.net/?retryWrites=true&w=majority',
+        'mongodb+srv://hr-sobuj:xs2ShkDKTB3FdUZ@student-aid.54e0b2i.mongodb.net/?retryWrites=true&w=majority',
         {
             useNewUrlParser: true,
             useUnifiedTopology: true,
