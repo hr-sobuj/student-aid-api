@@ -1,13 +1,13 @@
-# Fundraising for Education - Frontend Repository
+# Fundraising for Education - Backend Repository
 
 This repository contains the frontend code for the Fundraising for Education project. The project aims to support disadvantaged students by providing a platform for fundraising and facilitating secure donations.
 
 ## Technologies Used
 
-- HTML, CSS, JavaScript
-- React.js framework
+- JavaScript
+- Node.js, Express.js
 - MongoDB with Mongoose for the database
-- Integration of SSLCOMMERZ for secure payment processing
+- SSLCOMMERZ for secure payment processing
 
 ## Features
 

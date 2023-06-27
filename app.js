@@ -23,7 +23,7 @@ dotenv.config();
 app.use(cors());
 
 app.use((req, res, next) => {
-    const allowedOrigins = ['http://localhost:3000'];
+    const allowedOrigins = ['http://localhost:3000','https://student-aid-frontend-gilt.vercel.app/'];
     const origin = req.headers.origin;
     if (allowedOrigins.includes(origin)) {
         res.setHeader('Access-Control-Allow-Origin', origin);
