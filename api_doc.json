@@ -1,0 +1,146 @@
+// sign up api
+1.https://student-aid-main.herokuapp.com/auth/signup
+{
+    "name":"Habibur Rahman Sobuj",
+    "email":"sobujhd@gmail.com",
+    "password":"Admin123///"
+}
+
+// sign in api 
+2.https://student-aid-main.herokuapp.com/auth/signin
+{
+    "email":"sobujhd@gmail.com",
+    "password":"Admin123///"
+}
+// user information update
+3.https://student-aid-main.herokuapp.com/auth/update-info/<id>
+{
+    "name":"Md Habibur Rahman",
+    "varsity":"HSTU",
+    "phone":"01797972527",
+    archive:req.body.archive,
+    fund_collection:req.body.fund_collection,
+  
+}
+
+//update donate
+3.https://student-aid-main.herokuapp.com/auth/update-donate/<id>
+{
+    "donate":{
+        post_id: currentPost._id,
+        donate_id: currentPost.donate,
+        amount: amount,
+      };
+}
+3.https://student-aid-main.herokuapp.com/auth/update-receive/<id>
+{
+    post_id:{
+        type: mongoose.Types.ObjectId,
+        ref:"Post"
+    },
+    collected_amount:{
+        type: mongoose.Types.ObjectId,
+        ref:"Donate"
+    },
+    total_amount:{
+        type:String
+    }
+}
+//update post
+3.https://student-aid-main.herokuapp.com/auth/update-post/<id>
+{
+    "post_id":"63427a4539b1e21edecc7f02",
+ 
+}
+// user pass update
+4.https://student-aid-main.herokuapp.com/auth/update-pass/<id>
+{
+    "password":"Admin111///"
+}
+
+// user email update
+5.https://student-aid-main.herokuapp.com/auth/update-email/<id>
+{
+    "email":"sobujhd2@gmail.com"
+}
+// user avatar update
+6.http://localhost:5000/auth/update-avatar/<id>
+{
+    // upload a file 
+}
+// user multiple document upload 
+7.http://localhost:5000/auth/update-documents/<id>
+{
+    // upload multiple files 
+}
+// create help post
+8.http://localhost:5000/help/post
+{
+    
+    "title":"demo title with user id 2",
+    "description":"demo description",
+    "amount":"34",
+    "tags":["2","345"],
+    "user":<user id>,
+    "donate":<donate_id>
+}
+
+// update help post 
+9. http://localhost:5000/help/post/update/<post_id>
+{
+    "title":"hi",
+    "description":"hlw",
+    "amount":"345",
+    "tags":["tag1","tag3"],
+    "status":"accepted",
+    "user":<user_id>,
+}
+// get user 
+10.http://localhost:5000/auth/user/<id>
+{
+    // authorization must be needed 
+}
+// get all post
+11.http://localhost:5000/help/post/<page no>
+N.B=> per page a 10 ta kre show krbe.
+{
+    // authorization must be needed 
+}
+// get specific post 
+12.http://localhost:5000/help/spost/:id
+{
+    // authorization must be needed 
+}
+// create donate  
+13. http://localhost:5000/donate/init
+{
+    "collected":"300",
+    "need":"300",
+    "total_amount":"5000",
+    "donors":{
+        "donar_id":"634275d339b1e21edecc7ef1",
+        "weight":"360"
+    },
+    "owner":"633c4f54d2da05165640d74d"
+}
+// update donate
+14.http://localhost:5000/donate/update/<donate_id>
+{
+    "collected":"400",
+    "need":"4600",
+    "total_amount":"5000",
+    "donors":{
+        "donar_id":"634277ea39b1e21edecc7efb",
+        "weight":"560"
+    }
+}
+// payment 
+15.http://localhost:5000/payment/payment-request
+16.http://localhost:5000/payment/payment-notification
+17.http://localhost:5000/payment/payment-success
+18.http://localhost:5000/payment/payment-fail
+19.http://localhost:5000/payment/payment-cancel
+
+// get all users 
+20.http://localhost:5000/auth/users
+

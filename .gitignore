@@ -1,0 +1,8 @@
+/node_modules
+/.env
+/tmp.txt
+/.eslintrc.json
+/install.app
+/Procfile
+/vercel.json
+/.vscode
