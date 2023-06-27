@@ -4,7 +4,7 @@
   "description": "Student Aid Backend",
   "main": "app.js",
   "engines": {
-    "node": "14.x"
+    "node": "18.x"
   },
   "scripts": {
     "start": "node app.js",
