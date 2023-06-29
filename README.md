@@ -1,6 +1,6 @@
 # Student Aid Backend
 
-This is the backend component of the Fundraising Platform, a platform built using Node.js, Express.js, and MongoDB to assist financially disadvantaged students in fundraising for education. The backend integrates a Student Verification System and a secure Payment Gateway using SSLCOMMERZ.
+This is the backend component of the Student aid Platform, a platform built using Node.js, Express.js, and MongoDB to assist financially disadvantaged students in fundraising for education. The backend integrates a Student Verification System and a secure Payment Gateway using SSLCOMMERZ.
 
 ## Table of Contents
 
