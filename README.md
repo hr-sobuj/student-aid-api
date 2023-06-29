@@ -78,6 +78,15 @@ The API documentation for the Fundraising Platform Backend can be found at the f
 
 The documentation provides detailed information about the available endpoints, request/response formats, and authentication requirements.
 
+## Testing
+
+To test the application, use the following credentials:
+
+- Email: user1@gmail.com
+- Password: 123
+
+Use the provided credentials to log in and test the various features and functionalities of the live chat application.
+
 ## License
 
 This project is licensed under the [MIT License](LICENSE). Feel free to use and modify the code as per your needs.
