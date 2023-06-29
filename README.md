@@ -1,7 +1,4 @@
-Sure! Here's an example of a README.md file for the backend of the fundraising platform:
-
-````markdown
-# Fundraising Platform Backend
+# Student Aid Backend
 
 This is the backend component of the Fundraising Platform, a platform built using Node.js, Express.js, and MongoDB to assist financially disadvantaged students in fundraising for education. The backend integrates a Student Verification System and a secure Payment Gateway using SSLCOMMERZ.
 
@@ -19,14 +16,13 @@ To install and run the backend of the Fundraising Platform, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/fundraising-platform-backend.git
+   git clone https://github.com/hr-sobuj/student-aid-api.git
    ```
-````
 
 2. Navigate to the project directory:
 
    ```bash
-   cd fundraising-platform-backend
+   cd student-aid-api
    ```
 
 3. Install the required dependencies:
@@ -41,10 +37,20 @@ To install and run the backend of the Fundraising Platform, follow these steps:
    - Add the following variables to the `.env` file:
 
      ```bash
-     PORT=3000
-     MONGODB_URI=your-mongodb-connection-uri
-     SSLCOMMERZ_STORE_ID=your-store-id
-     SSLCOMMERZ_STORE_PASSWORD=your-store-password
+         APP_NAME=MyApp
+         PORT=3000
+         MONGODB_CONNECTION_STRING_PRODUCTION=your-production-mongodb-connection-uri
+         MONGODB_CONNECTION_STRING_LOCAL=your-local-mongodb-connection-uri
+         MONGODB_USERNAME=your-mongodb-username
+         MONGODB_PASSWORD=your-mongodb-password
+         JWT_SECRET=your-jwt-secret
+         JWT_EXPIRE_TOKEN=3600
+         COOKIE_NAME=my-cookie
+         COOKIE_SECRET=your-cookie-secret
+         STORE_ID=your-store-id
+         STORE_PASSWORD=your-store-password
+         ROOT=your-api-root
+
      ```
 
      Replace `your-mongodb-connection-uri` with the URI for your MongoDB database, `your-store-id` with your SSLCOMMERZ Store ID, and `your-store-password` with your SSLCOMMERZ Store Password.
